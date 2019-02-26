@@ -1,4 +1,4 @@
-one possible output would be:
+<b>One possible output would be:</b>
 
 Thread [3]:0</br>
 Thread [4]:0</br>
