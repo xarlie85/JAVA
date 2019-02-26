@@ -1,2 +1,2 @@
 # JAVA
-I am quite new in this community and I would like to start sharing some basic exercises of JAVA among the community.
+Stuff to delve into JAVA theory issues
