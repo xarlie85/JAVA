@@ -18,7 +18,7 @@ public class MaxThreadsTester {
 		Stream.iterate(0, (z) -> z+1).limit(threads).forEach( th ->
 			new Thread(	() -> 
 			{
-					Stream.iterate(0, (z) -> z+1).limit(3).forEach( z -> System.out.println("Thread [" + th + "]:" + z));
+					Stream.iterate(0, (z) -> z+1).limit(3).forEach( z -> System.out.println("-Thread [" + th + "]:" + z));
 			}).start()
 		);
 	}
