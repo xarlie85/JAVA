@@ -29,8 +29,8 @@ public class ThreadsTester {
 
 	/**
 	 * Launches just one thread. Creates the content of the thread by using the
-	 * Runnable FI, implementing the void run() method with a lambda expression. ()
-	 * -> {return;} matches the run() abstract method of the Runnable FI.
+	 * Runnable FI, implementing the <code>void run()</code> method with a lambda expression.
+	 * ()->{return;} matches the run() abstract method of the Runnable FI.
 	 */
 	private static void launchOneThread() {
 		new Thread(() -> System.out.println("I am implementing the void run() abstract method of the Runnable FI."))
