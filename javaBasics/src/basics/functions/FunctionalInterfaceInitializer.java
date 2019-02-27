@@ -38,8 +38,8 @@ public class FunctionalInterfaceInitializer<T, U, V> {
 	 * Uses the concept of <i>Monads</i>
 	 * 
 	 * @param triFunc
-	 *            New created FI, as a test for a yet non-existing three parameter FI
-	 *            Function FI
+	 *            New created FI, as a test for a yet non-existing three parameter
+	 *            FI Function FI
 	 * @return
 	 */
 	public <R> R method(TernaryFunction<T, U, V, R> triFunc) {
