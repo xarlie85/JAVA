@@ -1,4 +1,4 @@
-package coding.dataStructures.tries;
+package basics.dataStructures.tries;
 
 public class BasicOperator {
 

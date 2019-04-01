@@ -1,4 +1,4 @@
-package coding.annotations.runtime;
+package basics.annotations.runtime;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;

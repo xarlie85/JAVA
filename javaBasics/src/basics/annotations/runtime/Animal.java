@@ -1,4 +1,4 @@
-package coding.annotations.runtime;
+package basics.annotations.runtime;
 
 @CheckType("Mammal")
 public class Animal {
