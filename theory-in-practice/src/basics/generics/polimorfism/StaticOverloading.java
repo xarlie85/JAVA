@@ -4,13 +4,13 @@ import java.util.List;
 import java.util.Optional;
 
 /**
+ * This StaticOverloading class is intended to show that generic types are not
+ * considered are real types when method overloading. This is because of the
+ * type erasure process at compile time.
+ * 
  * @author Carlos de la Fuente
- *
- * @param <T>
  */
-public class StaticOverloading<T> {
-
-	private T object;
+public class StaticOverloading {
 
 	static void print(Integer i) {
 		System.out.println("Integer:" + i);
@@ -18,6 +18,10 @@ public class StaticOverloading<T> {
 
 	static void print(Optional<?> oi) {
 		System.out.println("Optional:" + oi);
+	}
+
+	static <T> void print(T oi) {
+		System.out.println("Type:" + oi);
 	}
 
 	static void print(List<?> stringList) {
