@@ -26,3 +26,6 @@ hs_err_pid*
 *.classpath
 /.metadata/
 /.recommenders/
+.settings
+target/
+Servers/

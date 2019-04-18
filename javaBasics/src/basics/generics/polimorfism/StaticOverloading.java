@@ -3,6 +3,11 @@ package basics.generics.polimorfism;
 import java.util.List;
 import java.util.Optional;
 
+/**
+ * @author Carlos de la Fuente
+ *
+ * @param <T>
+ */
 public class StaticOverloading<T> {
 
 	private T object;
@@ -14,7 +19,7 @@ public class StaticOverloading<T> {
 	static void print(Optional<?> oi) {
 		System.out.println("Optional:" + oi);
 	}
-	
+
 	static void print(List<?> stringList) {
 		stringList.stream().forEach(System.out::println);
 	}
@@ -40,6 +45,6 @@ public class StaticOverloading<T> {
 		StaticOverloading.print(StaticOverloading.factory(Optional.of(("hola"))));
 		StaticOverloading.print(StaticOverloading.factory(Optional.of(1)));
 
-		StaticOverloading.print( (String) StaticOverloading.factory(true));
+		StaticOverloading.print((String) StaticOverloading.factory(true));
 	}
 }
