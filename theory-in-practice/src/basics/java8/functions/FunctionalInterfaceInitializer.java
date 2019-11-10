@@ -23,8 +23,6 @@ public class FunctionalInterfaceInitializer<T, U, V> {
 	V v;
 
 	public static void main(String[] args) {
-		supplierTest();
-		consumerTest();
 		functionTest();
 		predicateTest();
 		bifunctionTest();
@@ -39,28 +37,12 @@ public class FunctionalInterfaceInitializer<T, U, V> {
 	 * 
 	 * @param triFunc
 	 *            New created FI, as a test for a yet non-existing three parameter
-	 *            FI Function FI
+	 *            Functional Interface
 	 * @return
 	 */
 	public <R> R method(TernaryFunction<T, U, V, R> triFunc) {
 		Objects.requireNonNull(triFunc);
 		return triFunc.apply(t, u, v);
-	}
-
-	/**
-	 * Implements a Supplier FI
-	 */
-	public static void supplierTest() {
-		Supplier<String> supplier = () -> "hola";
-		System.out.println("Supplier: " + supplier.get());
-	}
-
-	/**
-	 * Implements Consumer FI
-	 */
-	public static void consumerTest() {
-		Consumer<String> cons = (x) -> System.out.println("Consumer: " + x);
-		cons.accept("s");
 	}
 
 	/**

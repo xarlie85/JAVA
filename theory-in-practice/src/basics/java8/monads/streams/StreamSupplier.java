@@ -1,4 +1,4 @@
-package basics.java8.streams;
+package basics.java8.monads.streams;
 
 import java.util.Optional;
 import java.util.function.Supplier;
