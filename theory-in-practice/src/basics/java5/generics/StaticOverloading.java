@@ -1,12 +1,12 @@
-package basics.generics.polimorfism;
+package basics.java5.generics;
 
 import java.util.List;
 import java.util.Optional;
 
 /**
  * This StaticOverloading class is intended to show that generic types are not
- * considered are real types when method overloading. This is because of the
- * type erasure process at compile time.
+ * considered as real types when method overloading. This is because of the type
+ * erasure process at compile time.
  * 
  * @author Carlos de la Fuente
  */

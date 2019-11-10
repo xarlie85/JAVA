@@ -1,4 +1,4 @@
-package basics.functions;
+package basics.java8.functions;
 
 import java.util.Comparator;
 import java.util.Objects;
