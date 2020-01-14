@@ -23,8 +23,9 @@ public class FunctionImplTest {
 		Function<String, Integer> FunctionImpl2SumCharsInAString = new FunctionImplTest().new FunctionImpl();
 		Function<String, OptionalDouble> FunctionImpl2averageCharsInAString = new FunctionImplTest().new FunctionImpl2();
 
-		System.out.println("Function sumOfCharsInString: " + FunctionImpl2SumCharsInAString.apply("hihihi"));
-		System.out.println("Function averageOfCharsInString: " + FunctionImpl2averageCharsInAString.apply("hihihi"));
+		System.out.println("FunctionImpl sumOfCharsInString: " + FunctionImpl2SumCharsInAString.apply("hihihi"));
+		System.out.println("FunctionImpl2 averageOfCharsInString: "
+				+ FunctionImpl2averageCharsInAString.apply("hihihi").getAsDouble());
 
 		// Java 8: long way
 		Function<String, Integer> sumOfCharsInAString = (x) -> {
@@ -34,12 +35,12 @@ public class FunctionImplTest {
 			return x.chars().average();
 		};
 
-		System.out.println("Function sumOfCharsInString: " + sumOfCharsInAString.apply("hihihi"));
-		System.out.println("Function averageOfCharsInString: " + averageCharsInAString.apply("hihihi"));
+		System.out.println("sumOfCharsInString: " + sumOfCharsInAString.apply("hihihi"));
+		System.out.println("averageOfCharsInString: " + averageCharsInAString.apply("hihihi").getAsDouble());
 
 		// Java 8: short way
-		System.out.println("Function sumOfCharsInString: " + ("hihihi").chars().sum());
-		System.out.println("Function averageOfCharsInString: " + ("hihihi").chars().average());
+		System.out.println("Lambda sum: " + ("hihihi").chars().sum());
+		System.out.println("Lambda average: " + ("hihihi").chars().average().getAsDouble());
 
 	}
 }
