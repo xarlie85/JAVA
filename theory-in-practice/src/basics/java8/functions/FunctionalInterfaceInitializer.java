@@ -5,7 +5,6 @@ import java.util.Objects;
 import java.util.function.BiFunction;
 import java.util.function.BinaryOperator;
 import java.util.function.BooleanSupplier;
-import java.util.function.Consumer;
 import java.util.function.Function;
 import java.util.function.Predicate;
 import java.util.function.Supplier;
@@ -35,9 +34,8 @@ public class FunctionalInterfaceInitializer<T, U, V> {
 	/**
 	 * Uses the concept of <i>Monads</i>
 	 * 
-	 * @param triFunc
-	 *            New created FI, as a test for a yet non-existing three parameter
-	 *            Functional Interface
+	 * @param triFunc New created FI, as a test for a yet non-existing three
+	 *                parameter Functional Interface
 	 * @return
 	 */
 	public <R> R method(TernaryFunction<T, U, V, R> triFunc) {
@@ -52,7 +50,7 @@ public class FunctionalInterfaceInitializer<T, U, V> {
 		FunctionalInterfaceInitializer<String, Integer, Float> lambda = new FunctionalInterfaceInitializer<>();
 		lambda.v = 1.546f;
 
-		System.out.println(lambda.method((x, y, z) -> z));
+		System.out.println((float) lambda.method((x, y, z) -> z));
 
 	}
 
