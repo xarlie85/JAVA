@@ -2,9 +2,9 @@ package basics.enums;
 
 public enum GreekAlphabet {
 
-	ALPHA("\\U+03b1"), BETHA("\\u+03b2"), GAMMA("\\03b3"), DELTA("\\03b4"), EPSILON("\\03b5"), ZETA("\\03b6"), ETA("\\03b7"), THETA("\\03b8"),
-	IOTA("\\03b9"), KAPPA("\\03ba"), LAMBDA("\\03bb"), MU("\\03bc"), NU("\\03bd"), XI("\\03be"), OMICRON("\\03bf"), PI("\\03c0"), RHO("\\03c1"),
-	SIGMA("\\03c2"), TAU("\\03c3"), UPSILON("\\03c4"), PHI("\\03c5"), CHI("\\03c6"), PSI("\\03c7"), OMEGA("\\03c8");
+	ALPHA("\u03b1"), BETHA("\u03b2"), GAMMA("\u03b3"), DELTA("\u03b4"), EPSILON("\u03b5"), ZETA("\u03b6"), ETA("\u03b7"), THETA("\u03b8"),
+	IOTA("\u03b9"), KAPPA("\u03ba"), LAMBDA("\u03bb"), MU("\u03bc"), NU("\u03bd"), XI("\u03be"), OMICRON("\u03bf"), PI("\u03c0"), RHO("\u03c1"),
+	FINALSIGMA("\u03c2"), SIGMA("\u03c3"), TAU("\u03c4"), UPSILON("\u03c5"), PHI("\u03c6"), CHI("\u03c7"), PSI("\u03c8"), OMEGA("\u03c9");
 
 	private String unicode;
 
@@ -14,7 +14,7 @@ public enum GreekAlphabet {
 
 	@Override
 	public String toString() {
-		return name() + "::" + unicode;
+		return unicode + " - " + unicode.toUpperCase() + " - " + name();
 	}
 
 }
