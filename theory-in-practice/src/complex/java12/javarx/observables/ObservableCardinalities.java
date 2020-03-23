@@ -13,7 +13,9 @@ public class ObservableCardinalities {
 	public static void main(String[] args) {
 
 		// Basic observable with all the events related to GreekAlphabet letters
-		Observable.fromArray(GreekAlphabet.values()).subscribe(new BasicObserver<GreekAlphabet>());
+		GreekAlphabet[] greekLetters = GreekAlphabet.values();
+		Observable.fromArray(greekLetters).subscribe(new BasicObserver<GreekAlphabet>());
+		Observable.fromArray(greekLetters).subscribe(new BasicObserver<GreekAlphabet>());
 
 		// Single result stream
 		Observable.fromArray(JapaneeseHiragana.values()).first(JapaneeseHiragana.DEF).subscribe(new BasicSingleObserver<JapaneeseHiragana>());
